@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Details Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Details Form</h1>
+    <form id="detailsForm">
+      <h2>Personal Details</h2>
+      <div class="horizontal-group">
+        <div class="input-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="input-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+
+      <div class="horizontal-group">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="contact">Contact Number</label>
+          <input type="number" id="contact" name="contact" required>
+        </div>
+      </div>
+      <h2>Education</h2>
+      <div class="horizontal-group">
+        <div class="input-group">
+          <label for="education1">Education 1</label>
+          <input type="text" id="education1" name="education1" required>
+        </div>
+        <div class="input-group">
+          <label for="education2">Education 2</label>
+          <input type="text" id="education2" name="education2">
+        </div>
+      </div>
+      <h2>Work Experience</h2>
+      <div class="horizontal-group">
+        <div class="input-group">
+          <label for="experience1">Experience 1</label>
+          <input type="text" id="experience1" name="experience1" required>
+        </div>
+        <div class="input-group">
+          <label for="experience2">Experience 2</label>
+          <input type="text" id="experience2" name="experience2">
+        </div>
+      </div>
+      <h2>Skills</h2>
+      <label for="skills">Enter Your Skills</label>
+      <textarea id="skills" name="skills" rows="4" required></textarea>
+      <button id="submitBtn">
+        <a href="main.html" id="submitLink">Submit</a>
+      </button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
