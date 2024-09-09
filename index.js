@@ -1,7 +1,6 @@
 var form = document.getElementById('detailsForm');
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-    // Collect form values
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var email = document.getElementById('email').value;
@@ -11,7 +10,6 @@ form.addEventListener('submit', function (event) {
     var experience1 = document.getElementById('experience1').value;
     var experience2 = document.getElementById('experience2').value;
     var skills = document.getElementById('skills').value;
-    // Create an object to store the form data
     var userDetails = {
         firstName: firstName,
         lastName: lastName,
@@ -21,8 +19,8 @@ form.addEventListener('submit', function (event) {
         experience: [experience1, experience2],
         skills: skills,
     };
-    // Save the data in localStorage to retrieve on the other page
+    // Saving the dataa bhai so when reloads the page ye disspaer na ho
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
-    // Redirect the user to the display page
+   // dosre page ke luiye
     window.location.href = "main.html";
 });
