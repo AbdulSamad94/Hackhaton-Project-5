@@ -1,4 +1,3 @@
-// Display the user's submitted information on the page
 function displayUserInfo() {
     const userDetails = JSON.parse(localStorage.getItem('userDetails') || '{}');
   
@@ -17,25 +16,22 @@ function displayUserInfo() {
       `;
     }
   }
-  
-  // Generate a URL containing form data as query parameters
+
   function generateFormUrl() {
     const userDetails = JSON.parse(localStorage.getItem('userDetails') || '{}');
   
-    // Construct query string
     const queryParams = new URLSearchParams(userDetails).toString();
     const generatedUrl = `${window.location.origin}/index.html?${queryParams}`;
   
-    // Display the generated URL on the page
+
     const generatedUrlElement = document.getElementById('generatedUrl');
     if (generatedUrlElement) {
       generatedUrlElement.innerHTML = `<a href="${generatedUrl}" target="_blank">${generatedUrl}</a>`;
     }
   }
   
-  // Event listeners for the Generate URL button
+
   document.getElementById('generateUrlBtn')?.addEventListener('click', generateFormUrl);
-  
-  // Display user info when the page loads
+
   window.onload = displayUserInfo;
   
