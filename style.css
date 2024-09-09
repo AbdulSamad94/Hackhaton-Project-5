@@ -66,13 +66,13 @@ p {
 a {
   color: #4facfe;
   text-decoration: none;
-  word-wrap: break-word; /* Breaks long links */
-  max-width: 100%; /* Ensures the link doesn’t overflow the container */
+  word-wrap: break-word; 
+  max-width: 100%;
   display: inline-block;
   text-align: left;
   margin: 10px 0;
   font-size: 14px;
-  overflow-wrap: break-word; /* Allows the text to wrap and not overflow */
+  overflow-wrap: break-word;
 }
 
 a:hover {
