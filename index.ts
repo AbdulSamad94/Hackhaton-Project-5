@@ -1,7 +1,7 @@
 const form = document.getElementById('detailsForm') as HTMLFormElement;
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
   const firstName = (document.getElementById('firstName') as HTMLInputElement).value;
   const lastName = (document.getElementById('lastName') as HTMLInputElement).value;
